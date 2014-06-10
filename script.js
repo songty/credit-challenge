@@ -4,13 +4,16 @@ $(document).ready(function () {
 	$("form").submit(function( event ) {
 			console.log($('input:first'));
 			console.log($("input.cc-number"));
-		if ($('input:first').val() === "correct" ){
-			alert('yes!');
+		if (/[a-zA-Z\-'\s]+/.test($('input:first').val())){
+			alert('yes! You have name');
+		} else {
+			alert('you need a name');
+			$("input.name").addClass("failed");
 		}
 		if (/^\d{9}$/.test($('input.cc-number').val())) {
-			alert('it is a valid number, thank you');
+			// alert('it is a valid number, thank you');
 		} else {
-			alert('no number, please try again');
+			// alert('no number, please try again');
 		}
 
 		event.preventDefault();
