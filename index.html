@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
-	<script type="text/javascript" sc="script.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+    <style type="text/css" src="style.css"></style>
 	<title>Credit Cards</title>
 </head>
 <body>
 
-
+<form>
     <h2>Name On Card</h2>
-    <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Name on Card" required="">
+    <input type="text" class="name" pattern="\d*" x-autocompletetype="name" placeholder="Name on Card" required="">
 
     <h2>Billing Address</h2>
-    <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Address" required="">
+    <input type="text" class="address" pattern="\d*" x-autocompletetype="cc-number" placeholder="Address" required="">
 
     <h2>City</h2>
-    <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="City" required="">
+    <input type="text" class="city" pattern="\d*" x-autocompletetype="cc-number" placeholder="City" required>
 
     <h2>State</h2>
-    <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="State" required="">
+    <input type="text" class="state" pattern="\d*" x-autocompletetype="cc-number" placeholder="State" required="">
 
     <h2>Card number formatting</h2>
 
@@ -31,8 +32,10 @@
     <h2>CVC formatting</h2>
     <input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Security code" required="" autocomplete="off">
 
-
     <button type="submit">Submit</button>
   </form>
+
+<script src="http://jquery.bassistance.de/validate/jquery.validate.js"></script>
+<script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
 </body>
 </html>
