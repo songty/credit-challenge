@@ -1,0 +1,21 @@
+{
+  "name": "credit-challenge",
+  "version": "0.1.0",
+  "homepage": "https://github.com/songty/credit-challenge",
+  "authors": [
+    "Tian Song <tian.y.song@gmail.com>"
+  ],
+  "description": "simple credit forms",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
